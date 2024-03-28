@@ -10,41 +10,45 @@
     <link href="css/main.css" rel="stylesheet">
     <title>Music Mixer</title>
 </head>
-    <body>
-        
+    <body class="container">
+        <h1 class="hidden">Music Mixer</h1>
         <main>
-           <div><h1 class="header">Music Mixer</h1></div> 
-            <section class="grid-con">
-                <h2 class="hidden">Background</h2>
 
-                <div class="overlay-main box-background col-span-full"></div>
-                <div class="box-icon overlay-icon1 l-col-start-3 l-col-end-5">Place here</div>
-                <div class="box-icon overlay-icon2 l-col-start-5 l-col-end-7">Place here</div>
-                <div class="box-icon overlay-icon3 l-col-start-7 l-col-end-9">Place here</div>
-                <div class="box-icon overlay-icon4 l-col-start-9 l-col-end-11">Place here</div>
-
-         
+            <section id="main-text" class="grid-con">
+                <h2 class="hidden">Text</h2>
+                <div class="text col-start-1 col-end-5 m-col-start-3 m-col-end-12 l-col-start-4 l-col-end-11">GOOD DRINK - GOOD MUSIC</div>
+            </section>
+            <section id="drop-zone" class="grid-con">
+                <h2 class="hidden">Drop-zone</h2>
+                <div class="drop-zone col-start-1 col-end-2 m-col-start-2 m-col-end-5 l-col-start-4 l-col-end-6"></div>
+                <div class="drop-zone col-start-2 col-end-3 m-col-start-6 m-col-end-9 l-col-start-7 l-col-end-9"></div>
+                <div class="drop-zone col-start-3 col-end-4 m-col-start-10 m-col-end-13 l-col-start-10 l-col-end-12"></div>
             </section>
 
-           
-
-            <section class="grid-con">
-                <h2 class="hidden">Musical tools</h2>
-                <div class="box col-span-full l-col-start-3 l-col-end-5"><img class="image-icon" src="images/drums.jpg" alt="drums"></div>
-                <div class="box col-span-full l-col-start-6 l-col-end-8"><img class="image-icon" src="images/guitar.jpg" alt="guitar"></div>
-                <div class="box col-span-full l-col-start-9 l-col-end-11"><img class="image-icon" src="images/piano.jpg" alt="piano"></div>
-            </section>
-            <section class="grid-con">
-                <h2 class="hidden">Musical tools</h2>
-                <div class="box col-span-full l-col-start-3 l-col-end-5"><img class="image-icon" src="images/maracas.jpg" alt="maracas"></div>
-                <div class="box col-span-full l-col-start-6 l-col-end-8"><img class="image-icon" src="images/tambourine.jpg" alt="tambourine"></div>
-                <div class="box col-span-full l-col-start-9 l-col-end-11"><img class="image-icon" src="images/bell.jpg" alt="bell"></div>
+            <section id="buttons" class="grid-con">
+                <h2 class="hidden">Buttons</h2>
+                <div class="playButton col-start-1 col-end-2 m-col-start-1 m-col-end-3 l-col-start-3 l-col-end-5"><img src="images/play.png" alt="playButton" id="playButton"></div>
+                <div class="pauseButton col-start-2 col-end-3 m-col-start-3 m-col-end-5 l-col-start-5 l-col-end-7"><img src="images/pause.png" alt="pauseButton" id="pauseButton"></div>
+                <div class="resetButton col-start-3 col-end-4 m-col-start-10 m-col-end-13 l-col-start-10 l-col-end-13"><img src="images/reset.png" alt="resetButton"  id="resetButton"></div>
             </section>
 
+            <section class="grid-con audio-controls">
+                <h2 class="hidden">Volume Control</h2>
+                <input id="volumeControl" class="slider col-span-full m-col-start-5 m-col-end-9 l-col-start-7 l-col-end-10" type="range" min="0" max="100" value="0">
+            </section>
             
-           
+            <section id="disk-drag" class="grid-con">
+                <h2 class="hidden">Disks</h2>
+                <div class="disk col-start-1 col-end-3 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-3"><img src="images/disk1.png" alt="disk1" id="disk1" draggable="true"></div>
+                <div class="disk col-start-3 col-end-5 m-col-start-8 m-col-end-9 l-col-start-5 l-col-end-9"><img src="images/disk2.png" alt="disk2" id="disk2" draggable="true"></div>
+                <div class="disk col-start-1 col-end-3 m-col-start-1 m-col-end-4 l-col-start-10 l-col-end-11"><img src="images/disk3.png" alt="disk3" id="disk3" draggable="true"></div>
+                <div class="disk col-start-3 col-end-5 m-col-start-8 m-col-end-9 l-col-start-1 l-col-end-3"><img src="images/disk4.png" alt="disk4" id="disk4" draggable="true"></div>
+                <div class="disk col-start-1 col-end-3 m-col-start-1 m-col-end-4 l-col-start-5 l-col-end-9"><img src="images/disk5.png" alt="disk5" id="disk5" draggable="true"></div>
+                <div class="disk col-start-3 col-end-5 m-col-start-8 m-col-end-9 l-col-start-10 l-col-end-11"><img src="images/disk6.png" alt="disk6" id="disk6" draggable="true"></div>
+            </section>
         </main>
+          
        
-        <script src="js/main.js"></script>  
+        <script src="js/main.js"></script> 
     </body>
 </html>
